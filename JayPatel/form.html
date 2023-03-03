@@ -1,0 +1,61 @@
+<!--#include virtual="../common/form.html" -->
+<form action="">
+<!--#include virtual="../common/form.html"-->
+<!--#include virtual="../common/form.html"-->
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styleform.css" />
+    <script src="./JS/changetext.js"></script>
+</head>
+<div class="fullbody">
+    <h1 div="headcontainer">Contact Form</h1>
+    
+</div>
+
+<div class="midbody">
+    <br>&nbsp;<label > First name: </label><br>
+    &nbsp;
+
+    <input type="text" value =""><br><br>
+    &nbsp;
+
+    <label> Last name:</label><br>
+    &nbsp;
+
+    <input type="text" value =""><br><br>
+    &nbsp;
+<div id="12" class="feedback">
+    <label> Please rate your experience:</label><br>
+    
+    <div class="rating">
+        <label>1
+            <input type="radio" name="rating" value="1" class=""radio-btn/>
+        </label>
+        <label>2
+            <input type="radio" name="rating" value="2" class=""radio-btn/>
+        </label>
+        <label>3
+            <input type="radio" name="rating" value="3" class=""radio-btn/>
+        </label>
+        <label>4
+            <input type="radio" name="rating" value="4" class=""radio-btn/>
+        </label>
+        <label>5
+            <input type="radio" name="rating" value="4" class=""radio-btn/>
+        </label>
+    </div>
+    <textarea id="12" name="message" rows="5" cols="50"></textarea>
+</div>
+&nbsp;
+<div class="emailaddress">
+    <label> Please leave your email address for follow-up:</label>
+    <input type="email" id="email" name="email" required/>
+    <!-- <input id="email" name="email"/> -->
+</div>
+
+    &nbsp;
+</div>
+<div class="formbutton">
+    <input type="submit" value="Submit" onclick="sub()">
+    <input type="reset">
+</div>
+</form>

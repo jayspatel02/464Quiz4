@@ -1,0 +1,17 @@
+.body_style{
+    padding: 123;
+    margin: 123;
+}
+
+.nav_bar{
+    width: 200px;
+    height: 100px;
+}
+
+.good{
+    background-color: rgb(255, 115, 115);
+}
+
+.bad{
+    background-color: rgb(119, 119, 255);
+}

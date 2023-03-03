@@ -1,0 +1,43 @@
+body {
+    margin: 10px;
+}
+
+.flex_cont{
+    display:flex;
+}
+
+.flex_item{
+    flex:1;
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+    background-color: lightgreen;
+}
+
+.large_margin{
+    margin: 10px;
+}
+@media screen and (min-width: 900px) {
+    body{
+        margin: 10px;
+        font-size: 1em;
+        background-color: antiquewhite;
+    }
+}
+
+img{
+    max-width: 100%;
+}
+
+.nav_item{
+    background-color: green;
+    border:2px solid white;
+    border-color: white;
+    text-align: center;
+}
