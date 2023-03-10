@@ -1,0 +1,105 @@
+<!--#include virtual="../common/form.html"-->
+<!DOCTYPE html>
+<!--#include virtual="../common/form.html"-->
+<!--#include virtual="../common/form.html"-->
+<html lang="en-US" class="webpage_Jay">
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
+    <head>
+        <title>My Website</title>
+        <style>
+#mode-ping{
+    padding: 0px;
+}
+
+#mode-ping {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: black;
+    padding: 10px;
+    font-size: 16 px;
+    cursor: pointer;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 10pax;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: grey;
+}
+
+.dropdown {
+    position: relative;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body {
+    background-color: rgb(233, 138, 138);
+    color: black;
+}
+
+body.dark-mode {
+    background-color: rgb(97, 97, 97);
+    color: white
+}
+.background_web {
+    color: aqua;
+}
+        </style>
+    </head>
+    <body id="background_web">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                 <a href="#">Projects</a>
+                 <div class="dropdown-content">
+                    <a href="#">Research Project</a>
+                    <a href="#">Software engineering class Project</a>
+                    <a href="#">Professional Project</a>
+                </div>
+                </li>
+                <li><a href="#"> Contact</a></li>
+                <li id="mode-ping"><button>Toggle Light/Dark Mode</button></li>
+            </ul>
+        </nav>
+
+    <h1>Welcome to My Website</h1>
+
+    <script>
+        const modeToggle = document.getElementById('mode-ping');
+        const body = document.body;
+        modeToggle.addEventListener('click',() => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+    </body>
+
+</html>
