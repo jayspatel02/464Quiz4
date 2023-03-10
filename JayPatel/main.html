@@ -3,22 +3,23 @@
 <html lang = "en-US">
    <head>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="./JS/rotating_image.js"></script>
 <!--#include virtual="../common/main.html"-->
 <!--#include virtual="../common/main.html"-->
 <title>Jay Patel</title>
-    <link 
+    <link Z
     href="https://jayspatel03.wixsite.com/my-site"
     rel="stylesheet"
     />
     </head>
-    <script src="JS/changetext.js"></script>;
+    <script src="JS/changetext.js"></script>
 <body style="padding: 20px; margin: 10px; border: 10px;">
     <header>
         <div class="container">
-        <h1 style="background-color:aliceblue"> Jay's Website </h1>
+        <h1 style="background-color:rgb(185, 210, 225)"> Jay's Website </h1>
         <h3> Made by Jay Patel </h3>
         </div>
-    </header>s
+    </header>
 </body>
 
 <nav>
@@ -54,11 +55,33 @@
     </p>
     </div>
 </main>
-    <div class =videoBo>
+&nbsp;
+&nbsp;  
+<title>Rotating Images</title>
+    <div class="form-container">
+        <label for="image-select"> select a group: </label>
+        <select id="image-select">
+            <option value="group1" onclick="click()"> Group 1: Plane</option>
+            <option value="group2" onclick="click()"> Group 2: Car</option>
+            <option value="group3"onclick="click()"> Group 3: Technology</option>
+        </select>
+    </div>
+    <div id="image-container">
+        <img src="./image/group1/1_delta.jpg" alt="Image 1" class="active" data-group="group1">
+        <img src="./image/group1/2_delta.jpg" alt="Image 2" data-group="group1">
+        <img src="./image/group1/3_delta.jpg" alt="Image 3" data-group="group1">
+        <img src="./image/group2/1_car.jpg" alt="Image 1" data-group="group2">
+        <img src="./image/group2/2_car.jpg" alt="Image 2" data-group="group2">
+        <img src="./image/group2/3_car.jpg" alt="Image 3" data-group="group2">
+        <img src="./image/group3/1_delta.jpg" alt="Image 1" data-group="group3">
+        <img src="./image/group3/2_delta.jpg" alt="Image 2" data-group="group3">
+        <img src="./image/group3/3_delta.jpg" alt="Image 3" data-group="group3">
+
+    <!-- <div class =videoBo>
         <video width="320" height="240" controls>
         <source src ="video/video_16.mp4" type="video/mp4">
         <source src="movie.ogg" type=video/ogg>
         browser is not supported</video>
-    </div>
+    </div> -->
     </nav>
 </html>

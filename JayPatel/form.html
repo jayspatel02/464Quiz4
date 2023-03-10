@@ -27,7 +27,8 @@
     <label> Please rate your experience:</label><br>
     
     <div class="rating">
-        <label>1
+        <!-- &#9733; for star symbol -->
+        <label>1 
             <input type="radio" name="rating" value="1" class=""radio-btn/>
         </label>
         <label>2
@@ -59,3 +60,16 @@
     <input type="reset">
 </div>
 </form>
+
+<button>Change color</button>
+<script>
+    const btn = document.querySelector("button");
+    function random(number) {
+      return Math.floor(Math.random() * (number + 1));
+    }
+    btn.addEventListener("click", () => {
+      const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+      document.body.style.backgroundColor = rndCol;
+    });
+</script>
+    
